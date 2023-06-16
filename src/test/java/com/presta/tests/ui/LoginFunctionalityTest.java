@@ -5,7 +5,7 @@ import com.presta.utility.ConfigReader;
 import org.testng.annotations.Test;
 
 public class LoginFunctionalityTest extends TestBase {
-   String url=" my url";
+    public String url = ConfigReader.getProperty("url");
 
     /**
      * Given User is on the homepage
@@ -17,8 +17,10 @@ public class LoginFunctionalityTest extends TestBase {
      * Then user should be able to see the "My account - My Store" title
      * Then user should be able to verify the "Welcome to your account. Here you can manage all of your personal information and orders."
      */
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke"},
+    description = "Login functionality testing")
     public void successfulLogin(){
+        getAppLibrary().getFlowLibrary().navigateToUrl(url);
         getAppLibrary().getPage().getLoginFunctionalityPage().loginFunctionalityTest();
     }
 }
