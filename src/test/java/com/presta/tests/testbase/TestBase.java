@@ -41,7 +41,8 @@ public class TestBase {
     }
 
     @AfterMethod(alwaysRun = true)
-    synchronized void tearDown() {
+    public void tearDown() {
+        System.out.println("After Method called");
         Driver.close();
     }
 }
