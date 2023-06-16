@@ -5,7 +5,7 @@ import com.presta.utility.ConfigReader;
 import org.testng.annotations.Test;
 
 public class LoginFunctionalityTest extends TestBase {
-   String url=" my url"
+   String url=" my url";
 
     /**
      * Given User is on the homepage
