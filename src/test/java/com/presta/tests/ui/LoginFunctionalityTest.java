@@ -5,7 +5,7 @@ import com.presta.utility.ConfigReader;
 import org.testng.annotations.Test;
 
 public class LoginFunctionalityTest extends TestBase {
-    public String url = ConfigReader.getProperty("url");
+    public String newUrl = ConfigReader.getProperty("url");
 
     /**
      * Given User is on the homepage
