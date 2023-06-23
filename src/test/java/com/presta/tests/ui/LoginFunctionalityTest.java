@@ -5,7 +5,7 @@ import com.presta.utility.ConfigReader;
 import org.testng.annotations.Test;
 
 public class LoginFunctionalityTest extends TestBase {
-    public String url = ConfigReader.getProperty("url");
+    public String homePageUrl = ConfigReader.getProperty("url");
 
     /**
      * Given User is on the homepage
@@ -20,7 +20,8 @@ public class LoginFunctionalityTest extends TestBase {
     @Test(groups = {"smoke"},
     description = "Login functionality testing")
     public void successfulLogin(){
-        getAppLibrary().getFlowLibrary().navigateToUrl(url);
+        getAppLibrary().getFlowLibrary().navigateToUrl(homePageUrl);
         getAppLibrary().getPage().getLoginFunctionalityPage().loginFunctionalityTest();
     }
+
 }
