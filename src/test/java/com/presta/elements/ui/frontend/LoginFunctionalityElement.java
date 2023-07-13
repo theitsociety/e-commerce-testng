@@ -1,4 +1,4 @@
-package com.presta.elements.ui;
+package com.presta.elements.ui.frontend;
 
 import com.presta.utility.Driver;
 import org.openqa.selenium.WebElement;

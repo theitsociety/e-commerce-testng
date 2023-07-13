@@ -1,7 +1,6 @@
-package com.presta.pages.ui;
+package com.presta.pages.ui.frontend;
 
-import com.github.javafaker.Faker;
-import com.presta.elements.ui.LoginFunctionalityElement;
+import com.presta.elements.ui.frontend.LoginFunctionalityElement;
 import com.presta.utility.ConfigReader;
 import com.presta.utility.Utility;
 import org.testng.Assert;

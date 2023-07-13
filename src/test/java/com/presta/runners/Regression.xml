@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" parallel="classes" thread-count="8">
+    <listeners>
+        <listener class-name="com.presta.utility.TestListeners"/>
+    </listeners>
+    <parameter name="userName" value="Test User"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="abc@gmail.com"/>
+    <parameter name="password" value="abc1234"/>
+    <test name="Regression Test dsadsadsadas"  >
+        <groups>
+            <run>
+                <include name="smoke" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.presta.tests.ui.frontend*"/>
+            <package name="com.presta.tests.ui.admin.*"/>
+        </packages>
+    </test>
+</suite>

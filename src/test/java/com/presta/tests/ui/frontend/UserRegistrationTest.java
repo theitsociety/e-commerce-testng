@@ -1,4 +1,4 @@
-package com.presta.tests.ui;
+package com.presta.tests.ui.frontend;
 
 import com.github.javafaker.Faker;
 import com.presta.tests.testbase.TestBase;

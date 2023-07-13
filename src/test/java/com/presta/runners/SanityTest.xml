@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Suite">
+
+    <listeners>
+        <listener class-name="com.presta.utility.TestListeners"/>
+        <!--  <listener class-name="com.presta.tests.testbase.TestListenerExamples"></listener>-->
+    </listeners>
+    <parameter name="userName" value="Test User"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="abc@gmail.com"/>
+    <parameter name="password" value="abc1234"/>
+    <test name="Smoke Test">
+        <classes>
+            <class name="com.presta.tests.ui.admin.catalogs.products.AddProductsTest">
+            </class>
+
+        </classes>
+    </test>
+</suite>

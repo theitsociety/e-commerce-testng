@@ -1,6 +1,6 @@
-package com.presta.pages.ui;
+package com.presta.pages.ui.frontend;
 
-import com.presta.elements.ui.UserRegistrationElement;
+import com.presta.elements.ui.frontend.UserRegistrationElement;
 import com.presta.utility.Driver;
 import com.presta.utility.Utility;
 import org.testng.Assert;
